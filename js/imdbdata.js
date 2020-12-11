@@ -67,7 +67,7 @@ const settings = {
 
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON(settings, function(resp) {
+        $.ajax(settings).done(function (resp) {
             var feat = resp.ITEMS,
                 tableData = [];
 				
